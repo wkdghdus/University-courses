@@ -1,0 +1,40 @@
+Answers for Lab 2
+-----------------------------------------------
+
+EXERCISE 1
+
+1. This question refers to variables data1 and data2 in class TestDataTypes. For each one of the following statements indicate whether the comparison will return the value true or false
+
+
+data1 == data2: true or false?
+	false
+data1.intVar == data2.intVar: true or false?
+	true
+data1.charVar == data2.charVar: true or false?
+	true
+data1.boolVar == data2.boolVar: true or false?
+	true
+data1.doubleVar == data2.doubleVar: true or false?
+	true
+data1.varA == data2.varA: true or false?
+	false
+data1.varA.numItems == data2.varA.numItems: true or false?
+	true
+data1.varA.arrItems == data2.varA.arrItems: true or false?
+	true
+2. How many of your answers to question 1 were incorrect? 
+	none
+3. Why was the result of the last comparison true, even though arrays are non-primitive types?
+	Since the address of the array was the same. The same array variable was used for data1 and data2, meaning that the address 
+	they hold will be the same
+EXERCISE 3
+
+4. What causes the first compilation error?
+	main is a static method, meaning that it cannot make direct reference to the attribute counter which is a non-static variable.
+	That is because counter instance variable is only meaningful when the class is declared so it must be used as (object).counter 
+
+EXERCISE 4
+
+5. Why does program CountObjects prints a message indicating that only one object was created, even though the program created more than one object of class ClassC?
+	Since the counter instance variable is is a non-static variable meaning that it is initialized and declared every time the 
+	object is created.

@@ -1,0 +1,52 @@
+Answers for Lab 3
+-----------------------------------------------
+
+EXERCISE 1
+
+1. Should instance variable interestRate be declared as static? Explain.
+	It should be declared as non-static. Since each object must have own unique variable value.
+	
+2. Write the output from the test for class SavingsAccount. 
+	SavingsAccount: balance $115.0, interest rate 0.15%
+
+
+EXERCISE 2
+
+3. Which method(s) of the class CheckingAccount demonstrate overriding? Which methods demonstrate overloading?
+	Overriding: deposit(), withdraw(), toString
+	Overloading: none
+4. Is bacc0 = chacc1 legal? Why?
+	Yes, since CheckingAccount class inherits from BankAccount class.
+	Meaning all the required variables and codes for BankAccount is in the CheckingAccount
+5. Is chacc1 = bacc1 legal? Why?
+	No since CheckingAccount is a child of BankingAccount
+	Meaning that the bacc1 variable does not have the code and instance variable for the CheckingAccount class.	
+
+6. On which variables bacc1, chacc1, sacc1 was the invocation to method
+deductFees() valid? Explain.
+	It was only legal with CheckingAccount since that is the only class with deductFees() method.
+	
+7. Which compilation error(s) could be fixed through casting? Which one(s)
+could not be fixed? Why?
+	Only the bacc1 (BankingAccount variable) could be fixed this way since CheckingAccount class inherits from BankingAccount.
+	While SavingAccount have no direct relation with the CheckingAccount
+
+	
+8. Does the program run after commenting out the line causing the compilation 
+error? If the program crashed, why did it crash?
+	After running the program, bacc1 casting caused it to crash since bacc1 variable was initially declared as a 
+	BankingAccount object, meaning it lacks some variables and code to be casted to CheckingAccount.
+
+
+
+EXERCISE 3
+
+9. Why does the compiler issue an error message when invoking newAcc.getTransactionCount()? Why does the compiler issue an error message when invoking newAcc.getInterestRate()?
+	Such an error occurs since the variable newAcc is type BankAccount, which doesn't have neither getTransactionCount(), getInterestRate() methods. 
+	When invoking a method, what matters is the type of the variable not the object type.
+	
+10. Can you tell whether in the statement String accountInfo = newAcc.toString(); the
+method toString() being invoked is from the class CheckingAccount or from the class
+SavingsAccount? Explain your answer.
+	No, since there are two
+
