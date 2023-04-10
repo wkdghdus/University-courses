@@ -1,0 +1,36 @@
+/* Primary Color */
+:root {
+  --primary-color: #FFB347;
+}
+
+/* Secondary Color */
+:root {
+  --secondary-color: #8FDDE7;
+}
+
+/* Accent Color */
+:root {
+  --accent-color: #FFF8E7;
+}
+
+/* Background Color */
+body {
+  background-color: #FFFFFF;
+}
+
+/* Text Color and Font */
+body {
+  color: #444444;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Links */
+a {
+  color: var(--secondary-color);
+}
