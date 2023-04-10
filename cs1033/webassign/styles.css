@@ -1,0 +1,33 @@
+body {
+
+    background-color: #66604E;
+
+}
+
+h1,h2 {
+    
+    color: #B4CAD4;
+    font-weight: bold
+    font-family: Georgia;
+    
+}
+
+h3{
+    
+    color: #8F9EA6;
+    font-weight: bold
+    font-family: Georgia;
+    
+}
+
+p,
+li {
+    
+    color: #F2E5B8;
+    font-family: Georgia;
+    
+}
+
+ul {
+  list-style-image: url('https://www.csd.uwo.ca/~lreid2/cs1033/assignment2/spring2023birds/checkbox.gif');
+}
