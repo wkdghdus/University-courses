@@ -49,7 +49,7 @@ public class PowerSet<T> {
             }
 
             //append the set into the list of sets
-            set[i] = newSet;
+            this.set[i] = newSet;
 
         }
 
@@ -62,7 +62,7 @@ public class PowerSet<T> {
      */
     public int getLength(){
 
-        return set.length;
+        return this.set.length;
 
     }
 
@@ -74,7 +74,7 @@ public class PowerSet<T> {
      */
     public Set<T> getSet(int i){
 
-        return set[i];
+        return this.set[i];
 
     }
     

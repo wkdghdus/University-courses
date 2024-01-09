@@ -23,7 +23,7 @@ public class Set<T>{
         LinearNode<T> newNode = new LinearNode<T>(element);
 
         //setting the next node as the first node of the list
-        newNode.setNext(setStart);
+        newNode.setNext(this.setStart);
 
         //assign the new node as a first of the list
         this.setStart = newNode;

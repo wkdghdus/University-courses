@@ -32,6 +32,7 @@ public class Counter {
         for (int i = 0; i < this.cardps.getLength(); i++){
 
             currSet = this.cardps.getSet(i);
+            System.out.println(currSet.toString());
 
             //////------- Calculating points -------//////
 
@@ -61,10 +62,10 @@ public class Counter {
             if (isFifteen(currSet)) points += 2;
 
             //check if the set contains flush
-            if (isFlush(currSet) && !currSet.contains(starter)){
+            if (isFlush(currSet) && !currSet.contains(this.starter)){
 
                 //if the flush's suit is the same with the hands
-                if ((currSet.getElement(0).getSuit()).equals(starter.getSuit())){
+                if ((currSet.getElement(0).getSuit()).equals(this.starter.getSuit())){
 
                     points += 5;
 

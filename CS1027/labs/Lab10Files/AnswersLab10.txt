@@ -1,0 +1,52 @@
+Answers for Lab 10
+-----------------------------------------------
+
+EXERCISE 1
+
+1. What should the return type be in each of the following methods?
+
+getData() --> T (generic type)
+getLeft() --> BinaryTreeNode<T>
+getRight() --> BinaryTreeNode<T>
+
+
+
+2. What should the parameter type be in each of the following methods?
+
+getData() --> T (generic type)
+getLeft() --> BinaryTreeNode<T>
+getRight() --> BinaryTreeNode<T>
+
+
+
+3. What would need to be added/removed/changed to make this class work for a more general tree such that each node could have more than 2 nodes?
+Instead of having parameter of left and right, we would need a list of nodes to link the children in the node.
+
+
+EXERCISE 2
+
+4. What is the base case of the size() method? What are the recursive cases?
+base case would be 0, when the r is null. meaning that it reached the end of the tree or the tree is null.
+the recursive case is number of the nodes
+
+
+5. What is the main difference between the 3 methods: inorder(), preorder(), and postorder()?
+it's in the order of visiting and appending the data to the list
+in this case the line tempList.addToRear(node.getData());
+
+
+for inorder, they visit the left child first then append then visit right child
+for postorder, they append after visiting all the child (so from the very left bottom)
+for preorder, they append first then visit left and right child.
+
+
+
+
+6. In the recFormatTree() method, what is the space parameter used for? What is the default value when this method is first called? What is being concatenated to this space value in the recursive calls? Does this make sense for how the tree is being displayed?
+we have space parameter to keep track of the indentation according the the level of the tree node. The default value would be just an empty string value, and in the recursion part, the space parameter's default value would be indented.
+
+
+EXERCISE 3
+
+7. How can you tell if a given node is a leaf node?
+by checking two children and see if they are null.

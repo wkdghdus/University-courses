@@ -1,0 +1,36 @@
+Answers for Lab 8
+-----------------------------------------------
+
+EXERCISE 1
+
+1. What is the type of Exception being thrown? Why is this occurring?
+it throws ClassCastException since c1 (otherObject) is a Card Object which does not
+implement the Comparable interface.
+
+
+2. After adding the "implements Comparable<Card>" into the class definition, why is there now a compiler-error?
+The type Card must implement the inherited abstract method Comparable<Card>.compareTo(Card)
+Since the Card class does not implement the Comparable ADT, in other words it does not have compareTo method
+
+
+EXERCISE 2
+
+3. After multiplying the return value by -1 in compareByName(), how are the names being sorted? Why is this happening?
+the name was sorted in a reverse order.
+
+
+EXERCISE 3
+
+4. Why is the list of cities being shown in this order initially?
+Since the compareTo method always returns 0, the order is never sorted.
+
+
+
+5.
+a) Initially, does the order in which the cities are added to the list affect the order in which they are stored in the list?
+yes, since the compareTo method always returns 0, the element will be added to the front of the list.
+
+
+b) After completing compareTo(), does the order in which the cities are added to the list affect the order in which they are stored in the list?
+No, since the order are modified when added through a proper compareTo method.
+

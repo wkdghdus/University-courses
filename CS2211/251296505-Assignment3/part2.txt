@@ -1,0 +1,18 @@
+﻿Files
+1. echo *, echo prints any parameter that’s written after, while * represents all the files and directories in the current path. Therefore, echo * will return us with the value of * which is all of the files and directories in the current path. 
+2. -i to prompt the file/directory before it’s removed. -f option to remove the file/directory without being prompted. If you use both simultaneously, -i takes precedence. Making the file prompt before it removes.
+3. Renames commands literally renames files or directory. Often used to change the name of multiple files/directories based on pattern or regular expression. While mv command essentially is used to move the file to different location, however, in the process of moving the file to new location, you can change its name
+4. “ELF" stands for "Executable and Linkable Format” 
+5. ls -l show contents size in which if the contents is empty, it is 0 bytes as the contents itself take up no space. On the other hand, du shows the disk usage of the file. The file itself must be stored somewhere in the memory (disk). Meaning, du command will show that 1 byte which stored the file itself, not the contents. 
+Directories
+1. mkdir -p grandparent/parent/child. -p option allows one to make the parent directories all at once
+2. You can enclose the file with a quotation mark to create and delete a directory with a space in it. You could use -r option to recursively delete all the contents in the directory too.
+3. According to mkdir man page, you can use mkdir -m 500 <dirname> in which 500 stands for r-x—— in chmod numeric code.
+4. cd - allow you to go back to previous working directory
+5. cd $(dirs +6), dirs shows the current directory stacks and +6 points to the 6th one. By using cd $(dirs +6), you can change directory to 6th directory in the stack 
+Permissions
+1. -v to show all the modification that are being made
+2. chown --reference=file1 file2 to copy permission of file1 to file2
+3. Use -c option with “%A %U %G” which represents file permission, user ownership, and group ownership respectively. -c option specifies that one wants to format the output into.
+4. Assume that group has write permission (if not use chmod g+w <dirname>). Then, make the file immutable using chattr +i <dirname> +I makes the file immutable it cannot be modified, moved, removed, or renamed. While, group members can still write data to the file. 
+5. It automatically applies to the default target which is the user most of the time. Therefore, chmod +x <filename> is equivalent to chmod u+x <filename>

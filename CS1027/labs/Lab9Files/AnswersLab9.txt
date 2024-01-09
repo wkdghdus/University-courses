@@ -1,0 +1,48 @@
+Answers for Lab 9
+-----------------------------------------------
+
+EXERCISE 1
+
+1. Why do the iterative methods require so many variables? What are the base cases of the recursive methods?
+Since the iterative method uses for loop to implement the fbonacci sequence, which requires for you to create a lot of variables
+while recursive method uses recursion and base case to achieve the following. the base case is 1 and 2.
+
+
+2. Write down the running time printed out to the console for each of the following inputs:
+
+Factorial(5):   iFact: 0ms      rFact: 0ms
+Factorial(10):  iFact: 1ms      rfact: 0ms
+Factorial(20):  iFact: 0ms      rFact: 0ms
+Factorial(40):  iFact: 0ms      rFact: 0ms
+
+Fibonacci(5):   iFact: 0ms      rFact: 0ms
+Fibonacci(10):  iFact: 0ms      rFact: 0ms
+Fibonacci(20):  iFact: 0ms      rFact: 1ms
+Fibonacci(40):  iFact: 0ms      rFact: 476ms
+
+3. What is the value of methodCalls2 (calls to rfib(2)) when n=40?
+    63245986
+
+
+4. Why is the recursive algorithm for computing Fibonacci numbers so slow compared to the iterative algorithm? Does the value of methodCalls2 make sense with this rationale?
+Since the time complexity of the recursive function for Fibonacci is O(2^N), while for iterative time complexity is O(N).
+Therefore, recursive function will take much longer time then itereative one. This being the case, methodCalls2 shows how many times the 
+recursive function has reached the 2nd level of the tree, the very base level being the 1 and 0.
+
+
+
+
+EXERCISE 3
+
+5. How many activation records are there in the execution stack?
+there are 5 activation records
+
+
+6. Write the values of 
+param1 = 1
+local1 = 1
+i = 1
+
+7. How did the execution stack change after you pressed F6 twice?
+m1() is deleted
+

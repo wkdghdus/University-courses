@@ -1,0 +1,1 @@
+return largest(node.getLeftChild());

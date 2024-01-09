@@ -1,0 +1,44 @@
+Answers for Lab 7
+-----------------------------------------------
+
+EXERCISE 1
+
+1. Which methods in the LinkedQueue class are taking in a parameter of the generic type T?
+enqueue()
+
+
+2. Which methods in the LinkedQueue class have a return type of the generic type T?
+first()
+dequeue()
+
+
+3. Suppose you didn't have an instance variable storing the current number of elements in the queue. How could you determine the number of elements for the size() method if such an instance variable was not available?
+by iterating through the linked nodes and calculating the length of the linked node starting from the front.
+
+
+EXERCISE 2
+
+4. Consider the possibility of using an Array Queue or a Circular Array Queue instead of the Linked Queue being used in this simulation. Would the simulation's results be impacted by switching to a different Queue implementation?
+Array and circular array queue would not impact the race as all the functions used in the snail method are essentially same in all types of queue.
+This is because we enqueued the dequeued value again into the linked queue, essentially mimicking the circular array's characteristic
+
+
+5. Which of these classes/methods would you have to modify if you were going to use one of the other queue implementations?
+I will modify move method and possibly use circular array queue, through this I wouldn't have to dequeue and enqueue the value again.
+
+
+EXERCISE 3
+
+6. What was the error message when you tried to load the next image after the image of musicians? Why is it crashing?
+EmptyCollectionException: The queue is empty 
+since the queue is not circular, nor enqueued again with the dequeued opject, 
+the queue is empty after command is inputted five times due to the dequeue method in next method.
+
+
+7. When you try performing the "undo" operation (before modifying the code in GraphicSystem.java), does it work as expected? Why or why not?
+it does not work as expected and gave message saying "No operation to undo."
+this is because the operation stacks was never pushed with any elements. 
+Resulting in always empty stacks triggering the if statement.
+
+
+

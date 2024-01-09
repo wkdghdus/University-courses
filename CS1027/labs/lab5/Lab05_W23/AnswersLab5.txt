@@ -1,0 +1,40 @@
+Answers for Lab 3
+-----------------------------------------------
+
+EXERCISE 1
+
+The exercise demonstrated a generic printer class. This example sent the wrapper class for primitives like integers, double values and terminated character arrays.
+Would the GenericPrinter class work on user created classes like Person?
+If so, then what would be printed out if the Person class did not have a toString method defined?
+It will work on the user created classes like Person, but if the toString() method does not exist
+It will return the address of the Person object.
+
+EXERCISE 2
+
+Write out your answer to the question 7. D.):
+How many swaps must be made to correctly reverse the array?
+up to the median - 1, therefore int data of the this.count/2
+
+Would the code been more or less efficient if you used a second array and just copied the connects of each element into their new position (i.e. original_array[0] to new_array[n], original_array[1] to new_array[n-1], original_array[2] to new_array[n-2], etc.) ?
+Explain your conclusion (why or why not).
+the code would be less efficient as declaring a second array takes up more memory than declaring a singular temporary variable.
+
+
+
+EXERCISE 3
+
+You were instructed to change the code to be more generic and to operate with any number of nodes, but were told that:
+You cannot change the method signature (parameters). You also cannot add instance variables to the class.
+If you were allowed to do this, what new instance variable would you add and to which class would you add this new instance variable?
+
+I would create a nodeLength/nodeCounter instance variable which the user declare how many node they want to make
+and create a for-loop based on that instance variable. (loops nodeLength times)
+
+EXERCISE 4
+
+In this exercise you were given a new class called DoubleLinkedNode. This class was different from the class used in Exercise 3 above.
+Could the class DoubleLinkedNode from this exercise be used in Exercise three in place of LinearNode without any other changes to the code in Exercise 3? (i.e ONLY: Search/Replace LinearNode with DoubleLinkedNode in the BuildLinkedList class.)
+If not, what other code would have to be changed?
+
+Yes, the DoubleLinkedNode class can be used in the exercise three with the same code. 
+As the DoubleLinkedList class has all the methods and instance variable contained in LinearNode class.

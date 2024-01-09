@@ -104,6 +104,8 @@ public class FileStructure {
             //finding the startIndex of the type in the long name of the file
             int typeStartInd = f.getLongName().length() - type.length();
 
+            System.out.println(f.getLongName().substring(typeStartInd).equals(type));
+
             //if the file type is the same with given type, add to the ArrayList
             if (f.getLongName().substring(typeStartInd).equals(type)){
 
@@ -142,16 +144,10 @@ public class FileStructure {
 
         ArrayList<String> nameAL = findName(this.root, name);
         
-        if (nameAL.isEmpty()){
-
-            return "";
-
-        }
-        else{
-
-            return nameAL.get(0);
+        if (nameAL.isEmpty()) return "";
+        
+        else return nameAL.get(0);
             
-        }
 
     }
 
